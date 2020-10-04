@@ -1,9 +1,9 @@
 
-.diferenciais {
+.advantages {
   text-align: center;
 }
 
-.diferenciais-diferencial {
+.advantages-advantage {
   margin: 0 3em 2em 3em;
   display: inline-block;
   vertical-align: top;
@@ -12,7 +12,7 @@
   padding-left: 4em;
 }
 
-.diferenciais-diferencial-titulo {
+.advantages-advantage-title {
   color: #4F4C4C;
   font-size: 1.2em;
   margin-top: .9em;
@@ -27,17 +27,17 @@
   text-transform: uppercase;
 }
 
-.diferenciais-diferencial-titulo--tempo {
+.advantages-advantage-title--time {
   background-image: url(../img/icon-clock.png);
 }
 
 
-.diferenciais-diferencial-titulo--foco {
+.advantages-advantage-title--focus {
   background-image: url(../img/icon-money.png);
 }
 
 
-.diferenciais-diferencial-titulo--especialistas {
+.advantages-advantage-title--experts {
   background-image: url(../img/icon-chemical.png);
 }
 
@@ -47,13 +47,13 @@
 @media (min-width: 830px) {
 
 
-  .secaoDiferenciais {
+  .sectionAdvantages {
     padding-bottom: 0;
     background-color: #f7f4f4;
   }
 
 
-  .diferenciais-diferencial {
+  .advantages-advantage {
     margin: 0 .5em;
     font-size: .9em;
     max-width: 260px;

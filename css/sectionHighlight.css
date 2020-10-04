@@ -1,5 +1,5 @@
 
-.secaoDestaque {
+.sectionHighlight {
   text-align: center;
   background-size: cover;
   background-color: #00161c;
@@ -8,7 +8,7 @@
 }
 
 
-.secaoDestaque-titulo {
+.sectionHighlight-title {
   font-weight: bold;
   margin-bottom: 1em;
   font-family: 'Montserrat', serif;
@@ -16,7 +16,7 @@
   line-height: 1;
 }
 
-.secaoDestaque-texto {
+.sectionHighlight-text {
   max-width: 600px;
   margin: 0 auto 2em auto;
   font-size: 1.25em;
@@ -24,7 +24,7 @@
 
 }
 
-.secaoDestaque-cta {
+.sectionHighlight-cta {
   background-color: transparent;
   border: 1px solid #fff;
   font-size: 1em;
@@ -38,19 +38,19 @@
   transition: .2s ease-in;
 }
 
-.secaoDestaque-cta:hover,
-.secaoDestaque-cta:focus {
+.sectionHighlight-cta:hover,
+.sectionHighlight-cta:focus {
   background: #fff;
   color: #333;
 }
 
 @media (min-width: 830px) {
 
-  .secaoDestaque {
+  .sectionHighlight {
     background-image: url(../img/bg-intro.jpg);
   }
 
-  .secaoDestaque-titulo {
+  .sectionHighlight-title {
     font-size: 5vw
   }
 

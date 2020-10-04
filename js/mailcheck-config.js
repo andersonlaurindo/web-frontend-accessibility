@@ -1,24 +1,24 @@
-var campoEmail = document.querySelector('#email')
-var sugestao = document.querySelector('#sugestao')
+var fieldEmail = document.querySelector('#email')
+var suggestion = document.querySelector('#suggestion')
 
 var domains = ['gmail.com', 'aol.com'];
 var secondLevelDomains = ['hotmail']
 var topLevelDomains = ["com", "net", "org"];
 
 
-campoEmail.addEventListener('blur', function() {
+fieldEmail.addEventListener('blur', function() {
   Mailcheck.run({
-    email: campoEmail.value,
+    email: fieldEmail.value,
     domains: domains,                       // optional
     topLevelDomains: topLevelDomains,       // optional
     secondLevelDomains: secondLevelDomains, // optional
     suggested: function(suggestion) {
-      sugestao.style.display = 'inline-block';
-      sugestao.textContent = 'Você quis dizer: ' + suggestion.full + ' ?';
-      sugestao.parentNode.classList.add('contatoCampo--erro');
-      campoEmail.classList.add('contatoCampo--validouErro');
-      sugestao.setAttribute('tabindex', '0');
-      sugestao.setAttribute('role', 'alert');
+      suggestion.style.display = 'inline-block';
+      suggestion.textContent = "It's mean: " + suggestion.full + " ?";
+      suggestion.parentNode.classList.add('contactField--error');
+      fieldEmail.classList.add('contactField--notValid');
+      suggestion.setAttribute('tabindex', '0');
+      suggestion.setAttribute('role', 'alert');
     }
   });
 });

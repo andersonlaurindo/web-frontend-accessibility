@@ -1,8 +1,8 @@
-document.querySelector('#cep').oninvalid = function() {
+document.querySelector('#zip').oninvalid = function() {
   this.setCustomValidity('');
   
   if (!this.validity.valid) {
-      this.setCustomValidity('Ops! Tem algo errado neste campo!');
-      this.parentNode.classList.add('contatoCampo--erro')
+      this.setCustomValidity('There is a error on this field!');
+      this.parentNode.classList.add('contactField--error')
    }
 }

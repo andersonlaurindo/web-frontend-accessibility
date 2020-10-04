@@ -1,17 +1,17 @@
-.rodape {
+.footer {
   background-color: #333;
   text-align: center;
 }
 
-.rodape-social {
+.footer-social {
   margin: 20px 0 10px 0;
 }
 
-.rodape-social li {
+.footer-social li {
   display: inline-block;
 }
 
-.rodape-social-link {
+.footer-social-link {
   width: 42px;
   height: 42px;
   border: 1px solid #fff;
@@ -22,42 +22,42 @@
   display: block;
 }
 
-.rodape-social-link--facebook {
+.footer-social-link--facebook {
   background-image: url(../img/facebook.png);
 }
 
-.rodape-social-link--twitter {
+.footer-social-link--twitter {
   background-image: url(../img/twitter.png);
 }
 
-.rodape-social-link--instagram {
+.footer-social-link--instagram {
   background-image: url(../img/instagram.png);
 }
 
-.rodape-nav-item {
+.footer-nav-item {
   display: inline-block;
   margin: 0 8px;
 }
 
-.rodape-nav-link {
+.footer-nav-link {
   color: #fff;
   text-decoration: none;
   line-height: 3;
 }
 
-.rodape-nav-link:hover,
-.rodape-nav-link:focus {
+.footer-nav-link:hover,
+.footer-nav-link:focus {
   text-decoration: underline;
 }
 
 @media (min-width: 830px) {
 
-  .rodape-logo {
+  .footer-logo {
     max-height: 50px;
     display: block;
   }
 
-  .rodape .container{
+  .footer .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

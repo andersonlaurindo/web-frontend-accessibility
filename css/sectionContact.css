@@ -1,21 +1,21 @@
 
-.secaoContato {
+.sectionContact {
   background-color: #F7F4F4;
   text-align: center;
   text-align: left;
 }
 
-.secaoContato-wink {
+.sectionContact-wink {
   color: #EB5757;
   font-weight: bold;
   font-size: 1.2em;
 }
 
-.secaoContato-form-fieldset {
+.sectionContact-form-fieldset {
   border: 0;
 }
 
-.secaoContato-form-legend {
+.sectionContact-form-legend {
   max-width: 300px;
   line-height: 1.6;
   text-align: center;
@@ -27,7 +27,7 @@
 }
 
 
-.secaoContato-form-cta {
+.sectionContact-form-cta {
   width: 100%;
   margin-top: 1em;
   display: block;
@@ -36,8 +36,8 @@
   border: 1px solid #B72E2E;
 }
 
-.secaoContato-form-cta:hover,
-.secaoContato-form-cta:focus {
+.sectionContact-form-cta:hover,
+.sectionContact-form-cta:focus {
   color: #fff;
   background-color: #B72E2E;
 }

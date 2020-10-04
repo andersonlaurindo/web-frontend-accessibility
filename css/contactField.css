@@ -1,15 +1,15 @@
 
-.contatoCampo {
+.contactField {
   margin: .8em auto;
   max-width: 600px;
   position: relative;
 }
 
-.contatoCampo-label {
+.contactField-label {
   position: relative;
 }
 
-.contatoCampo-label:before {
+.contactField-label:before {
   content:'';
   vertical-align: middle;
   display: inline-block;
@@ -25,12 +25,12 @@
   box-sizing: border-box;
 }
 
-.contatoCampo-checkbox:hover + .contatoCampo-label:before, 
-.contatoCampo-checkbox:focus + .contatoCampo-label:before {
+.contactField-checkbox:hover + .contactField-label:before, 
+.contactField-checkbox:focus + .contactField-label:before {
   border: 2px solid #333;
 }
 
-.contatoCampo-checkbox:checked + .contatoCampo-label:before {
+.contactField-checkbox:checked + .contactField-label:before {
   content: '';
   color: #fff;
   background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
@@ -38,7 +38,7 @@
   line-height: .8;
 }
 
-.contatoCampo-checkbox:checked + .contatoCampo-label:after {
+.contactField-checkbox:checked + .contactField-label:after {
   content: '';
   width: 10px;
   height: 5px;
@@ -54,7 +54,7 @@
 
 
 
-.contatoCampo-checkbox {
+.contactField-checkbox {
 /*  display: none;*/
 /*  visibility: hidden*/
   left: -9999px;
@@ -62,28 +62,28 @@
   opacity: 0;
 }
 
-.contatoCampo-icone {
+.contactField-icone {
   position: absolute;
   left: -2em;
   top: 2.5em;
   width: 1.5em;
 }
 
-.contatoCampo label,
-.contatoCampo input:not([type='checkbox']),
-.contatoCampo textarea {
+.contactField label,
+.contactField input:not([type='checkbox']),
+.contactField textarea {
   display: block;
   width: 100%;
   text-align: left;
 } 
 
-.contatoCampo label {
+.contactField label {
   margin-bottom: 5px;
   margin-left: 8px;
 } 
 
-.contatoCampo input,
-.contatoCampo textarea {
+.contactField input,
+.contactField textarea {
   font-size: 1em;
   padding: .5em;
   min-height: 50px;
@@ -92,17 +92,17 @@
   outline: 0;
 } 
 
-.contatoCampo input:focus,
-.contatoCampo textarea:focus {
+.contactField input:focus,
+.contactField textarea:focus {
   border: 2px solid #222;
 } 
 
-.contatoCampo-campoDesabilitado {
+.contactField-disabledField {
   background-color: #ddd;
 }
 
-.contatoCampo-msg, 
-.formContato-validacao {
+.contactField-msg, 
+.formContato-validation {
   margin-left: 4px;
   margin-top: 4px;
   font-size: .9em;
@@ -111,19 +111,19 @@
   display: none;
 }
 
-.contatoCampo .contatoCampo--validouFoi {
+.contactField .contactField--isValid {
   border: 2px solid #219653;
   background-color: #fff;
   position: relative;
 }
 
-.contatoCampo .contatoCampo--validouErro {
+.contactField .contactField--notValid {
   border: 2px solid #FF0000;
   background-color: #fff;
   position: relative;
 }
 
-.contatoCampo--sucesso:before {
+.contactField--success:before {
   content: '';
   display: inline-block;
   width: 33px;
@@ -135,7 +135,7 @@
   background-image: url(../img/validation-success.png);
 }
 
-.contatoCampo--erro:before {
+.contactField--error:before {
   content: '';
   display: inline-block;
   width: 33px;

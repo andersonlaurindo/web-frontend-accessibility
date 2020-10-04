@@ -1,7 +1,7 @@
 // Variaveis
 
-var btns = document.querySelectorAll('.listaDeArtigos-slider-item');
-var noticias = document.querySelectorAll('.listaDeArtigos-item');
+var btns = document.querySelectorAll('.articlesList-slider-item');
+var news = document.querySelectorAll('.articlesList-item');
 
 
 var new0 = document.querySelector('#new0');
@@ -12,37 +12,33 @@ var new2 = document.querySelector('#new2');
 new0.style.display = 'block'
 
 
-// Criando indicador de slide atual
-var indicadorSlideAtual = document.createElement('span');
-indicadorSlideAtual.classList.add('escondeVisualmente');
-indicadorSlideAtual.textContent = '(Slide atual)';
+var indicatorCurrentSlide = document.createElement('span');
+indicatorCurrentSlide.classList.add('visuallyHidden');
+indicatorCurrentSlide.textContent = '(Current slide)';
 
 
-// Percorre todos os botoes controladores
 btns.forEach(function(btn) {
   btn.addEventListener('click', function() {
     
-    // btn.href = 'javascript:void(0)'
-    noticias.forEach(function(noticia) {
-      noticia.style.display = 'none';
+    news.forEach(function(newItem) {
+      newItem.style.display = 'none';
       
-      if ( this.getAttribute('data-sliderItem') === noticia.getAttribute('data-noticia') ) {
-        noticia.style.display = 'block'
+      if ( this.getAttribute('data-sliderItem') === newItem.getAttribute('data-new') ) {
+        newItem.style.display = 'block'
       }
 
     }.bind(this));
     
   
     
-    document.querySelector('.listaDeArtigos-slider-item .escondeVisualmente').remove();
-    this.append(indicadorSlideAtual);
+    document.querySelector('.articlesList-slider-item .visuallyHidden').remove();
+    this.append(indicatorCurrentSlide);
     
 
-    // Remove classe 'ativo' dos outros botoes
     btns.forEach(function(btnRemoveClass) {
-      btnRemoveClass.classList.remove('listaDeArtigos-slider-item--ativo')
+      btnRemoveClass.classList.remove('articlesList-slider-item--active')
     })
 
-    this.classList.add('listaDeArtigos-slider-item--ativo')
+    this.classList.add('articlesList-slider-item--active')
   })
 })

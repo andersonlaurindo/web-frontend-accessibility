@@ -1,4 +1,4 @@
-.escondeVisualmente {
+.visuallyHidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -23,7 +23,7 @@ li[aria-hidden='false'] { display:block ; }
   height: 100vh;
 } 
 
-.pularNavegacao {
+.skipNavigation {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -44,18 +44,13 @@ li[aria-hidden='false'] { display:block ; }
 }
 
 
-.apenasLeitorDeTela {
-  position: absolute;
-  z-index: -1;
-}
-
 .container {
   padding: 3.5em 5%;
   margin: 0 auto;
   max-width: 1000px;
 }
 
-.tituloPadrao {
+.defaultTitle {
   font-family: 'Montserrat', serif;
   margin-bottom: 1em;
   color: #4F4C4C;
@@ -63,7 +58,7 @@ li[aria-hidden='false'] { display:block ; }
   text-transform: uppercase;
 }
 
-.btnPadrao {
+.btnDefault {
   border-radius: 5px;
   border: 0;
   background-color: #B72E2E;
@@ -75,13 +70,13 @@ li[aria-hidden='false'] { display:block ; }
   text-decoration: none;
 }
 
-.btnPadrao:hover,
-.btnPadrao:focus {
+.btnDefault:hover,
+.btnDefault:focus {
   background-image: linear-gradient(rgba(255, 255, 255, .05), rgba(255, 255, 255, .05));
   cursor: pointer;
 }
 
-.btnPadrao--pequeno {
+.btnDefault--small {
   font-size: 1em;
 }
 

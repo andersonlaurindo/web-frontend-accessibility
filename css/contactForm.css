@@ -6,7 +6,7 @@
 }
 
 
-.formContato-validacao {
+.formContato-validation {
   display: block;
   text-align: left;
 }
@@ -31,7 +31,7 @@
   background-color: #B72E2E;
 }
 
-.formContato-endereco {
+.formContato-address {
   color: #666;
   margin: 1em 0;
   text-align: center;

@@ -1,47 +1,47 @@
 
-.secaoSobre {
+.sectionAbout {
   color: #4F4C4C;
 }
 
-.secaoSobre-texto {
+.sectionAbout-text {
   margin-bottom: 1em;
 }
 
-.secaoSobre-plataformas {
+.sectionAbout-plataforms {
   display: flex;
   justify-content: space-around;
   margin-bottom: 1em;
 }
 
-.secaoSobre-imgDestaque {
+.sectionAbout-imgHighlight {
   display: none;
 }
 
 
 @media (min-width: 830px) {
 
-  .secaoSobre {
+  .sectionAbout {
     text-align: left;
   }
 
-  .secaoSobre-titulo {
+  .sectionAbout-title {
     text-align: left;
   }
 
-  .secaoSobre-imgDestaque {
+  .sectionAbout-imgHighlight {
     display: block;
     float: right;
     margin-left: 2em;
     margin-bottom: 2em;
   }
 
-  .secaoSobre-plataformas {
+  .sectionAbout-plataforms {
     display: block;
     padding-top: 1.5em;
     position: relative;
   }
 
-  .secaoSobre-plataformas:before {
+  .sectionAbout-plataforms:before {
     content: '';
     height: 1px;
     width: 45%;
@@ -50,7 +50,7 @@
     top: 4px;
   }
 
-  .secaoSobre-plataformas li {
+  .sectionAbout-plataforms li {
     display: inline-block;
     margin-right: 3em;
     margin: 1em 3em 0 0
